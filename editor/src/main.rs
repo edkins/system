@@ -1,3 +1,5 @@
+mod terminal;
+
 fn main() {
-    println!("Hello, world!");
+    terminal::R(String::from("stuff"));
 }
