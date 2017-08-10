@@ -1,6 +1,10 @@
 mod terminal;
+mod vimkeys;
 mod keyboard;
 
 fn main() {
-    terminal::create().R(String::from("stuff"));
+    let mut t = terminal::new();
+    let mut vk = vimkeys::new(t);
+    let mut kb = keyboard::new(vk);
+    kb.run();
 }

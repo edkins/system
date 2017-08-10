@@ -1,14 +1,14 @@
 #![allow(non_snake_case)]
 
-pub struct Term {
+pub struct Terminal {
 }
 
-impl Term {
+impl Terminal {
     pub fn R( &mut self, text : String ) {
         print!("{}",text)
     }
 }
 
-pub fn create() -> Term {
-    return Term{}
+pub fn new() -> Terminal {
+    return Terminal{}
 }
