@@ -1,0 +1,6 @@
+[package]
+name = "editor"
+version = "0.1.0"
+authors = ["Giles Edkins <edkins@gmail.com>"]
+
+[dependencies]
