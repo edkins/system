@@ -1,5 +1,6 @@
 mod terminal;
+mod keyboard;
 
 fn main() {
-    terminal::R(String::from("stuff"));
+    terminal::create().R(String::from("stuff"));
 }

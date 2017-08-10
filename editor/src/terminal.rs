@@ -1,4 +1,14 @@
 #![allow(non_snake_case)]
-pub fn R( text : String ) {
-    print!("{}",text)
+
+pub struct Term {
+}
+
+impl Term {
+    pub fn R( &mut self, text : String ) {
+        print!("{}",text)
+    }
+}
+
+pub fn create() -> Term {
+    return Term{}
 }
